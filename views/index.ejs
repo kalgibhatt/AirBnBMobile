@@ -13,7 +13,7 @@
 			<div class="row main-body">
 				<div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
 				</div>
-				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="margin-left:100px;">
+				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
 					<div class="row header-space">
 						<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 header-text">
 							<span class="header-livethere-text">Live there. </span>
@@ -32,10 +32,10 @@
 							<span class="search-box-text">When</span>
 							<input type="text" min="today" date-range-picker class="form-control date-picker search-bar-placeholder" placeholder="Check In		→ Check Out" name="daterange" ng-model="daterange">
 						</div>
-						<div class="col-md-4 search-box right-search-box">
+						<div class="col-md-4 search-box right-search-box" style="height:60px;border-bottom-right-radius: 0px;border-top-right-radius: 0px;">
 							<div class="col-md-7">
 								<span class="search-box-text pull-left">Guests</span>
-								<div class="btn-group homepage-guest">
+								<div class="btn-group homepage-guest pull-right">
 								  <input type="text" class="btn btn-default homepage-guest" placeholder="Guests" ng-click="show_guests = !show_guests" readonly="readonly" ng-model="item.item_count">
 								  </input>
 								  <span class="pull-right guest-downarrow" ng-click="show_guests = !show_guests">⌄</span>
@@ -48,65 +48,65 @@
 								  </div>
 								</div>
 							</div>
-							<div class="col-md-5" style="height:56px; padding:5px;">
-								<input type="submit" class="form-control btn btn-primary search-button" value="Search" focus-if="!show_guests">
+							<div class="col-md-5" style="padding:5px;margin-top:43px;margin-left:-26px;height:100px;width:360px;">
+								<input type="submit" class="form-control btn btn-primary search-button" value="Search" focus-if="!show_guests" style="height:50px;border-top-left-radius:0px;border-top-right-radius:0px;">
 							</div>
 						</div>
 					</form>
 					</div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Recommended listings</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-4">
+						<div class="col-xs-4">
 							<img class="images" src="images/city/paris.jpg" alt="Paris">
 							<span class="suggestion-text"><strong>$88</strong> Entire home/apt in 101 San Fernando</span>
 						</div>
-						<div class="col-md-4">
+						<div class="col-xs-4">
 							<img class="images" src="images/city/rome.jpg" alt="Paris">
 							<span class="suggestion-text"><strong>$90</strong> Entire home/apt in 33rd South</span>
 						</div>
-						<div class="col-md-4">
+						<div class="col-xs-4">
 							<img class="images" src="images/city/tokyo.jpg" alt="Paris">
 							<span class="suggestion-text"><strong>$58</strong> Entire home/apt in Colonnade</span>
 						</div>
 					</div>
 					<div class="seperator"></div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Explore the world</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
 						<div class="row">
-							<div class="col-md-6 col-lg-6">
+							<div class="col-xs-6 col-lg-6">
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-xs-12">
 										<img class="images" src="images/city/paris.jpg" alt="Paris">
 										<span class="image-text">Paris</span>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-6">
+							<div class="col-xs-6 col-lg-6">
 								<div class="row">
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-xs-6">
 											<img class="images" src="images/city/rome.jpg" alt="Rome">
 											<span class="image-text">Rome</span>
 										</div>
-										<div class="col-md-6">
+										<div class="col-xs-6">
 											<img class="images" src="images/city/LA.jpg" alt="Los Angeles">
 											<span class="image-text">Los Angeles</span>
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-xs-6">
 											<img class="images" src="images/city/lisbon.jpg" alt="Lisbon" style="padding-top: 2px;">
 											<span class="image-text">Lisbon</span>
 										</div>
-										<div class="col-md-6">
+										<div class="col-xs-6">
 											<img class="images" src="images/city/tokyo.jpg" alt="Tokyo" style="padding-top: 2px;">
 											<span class="image-text">Tokyo</span>
 										</div>
@@ -115,37 +115,37 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-3 col-lg-3">
+							<div class="col-xs-3 col-lg-3">
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-xs-12">
 										<img class="images" src="images/city/london.jpg" alt="London">
 										<span class="image-text">London</span>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-xs-12">
 										<img class="images" src="images/city/barcelona.jpg" alt="Barcelona" style="padding-top: 2px;">
 										<span class="image-text">Barcelona</span>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-6">
+							<div class="col-xs-6 col-lg-6">
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-xs-12">
 										<img class="images" src="images/city/NY.jpg" alt="New York" >
 										<span class="image-text">New York</span>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-3 col-lg-3">
+							<div class="col-xs-3 col-lg-3">
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-xs-12">
 										<img class="images" src="images/city/amsterdam.jpg" alt="Amsterdam">
 										<span class="image-text">Amsterdam</span>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-xs-12">
 										<img class="images" src="images/city/berlin.jpg" alt="Berlin" style="padding-top: 2px;">
 										<span class="image-text">Berlin</span>
 									</div>
@@ -155,12 +155,12 @@
 					</div>
 					<div class="seperator"></div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Homes in San Fransisco</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 			                <div id="SFO" class="carousel slide">
 			                 
 			                <ol class="carousel-indicators">
@@ -173,17 +173,17 @@
 			                    
 			                <div class="item active">
 			                	<div class="row">
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/1.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/3.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/4.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/1.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/3.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/4.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
 			                <div class="item">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/6.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/a.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/b.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/6.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/a.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Fransisco, CA, USA#" class="thumbnail"><img src="images/SFO/b.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
@@ -194,12 +194,12 @@
 			            </div>
 					</div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Homes in New York</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 			                <div id="NY" class="carousel slide">
 			                 
 			                <ol class="carousel-indicators">
@@ -212,17 +212,17 @@
 			                    
 			                <div class="item active">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/6.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/2.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/4.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/6.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/2.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/4.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
 			                <div class="item">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/3.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/5.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/1.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/3.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/5.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=New York, NY, USA#" class="thumbnail"><img src="images/NY/1.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
@@ -233,12 +233,12 @@
 			            </div>
 					</div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Homes in Los Angeles</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 			                <div id="LA" class="carousel slide">
 			                 
 			                <ol class="carousel-indicators">
@@ -251,17 +251,17 @@
 			                    
 			                <div class="item active">
 			                	<div class="row">
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/1.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/2.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/3.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/1.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/2.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/3.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
 			                <div class="item">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/4.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/5.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/6.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/4.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/5.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Los Angeles, CA, USA#" class="thumbnail"><img src="images/LA/6.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
@@ -272,12 +272,12 @@
 			            </div>
 					</div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Homes in Washington, D.C.</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 			                <div id="Washington" class="carousel slide">
 			                 
 			                <ol class="carousel-indicators">
@@ -290,17 +290,17 @@
 			                    
 			                <div class="item active">
 			                	<div class="row">
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/1.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/2.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/3.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/1.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/2.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/3.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
 			                <div class="item">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/4.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/5.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/6.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/4.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/5.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Washington, DC, USA#" class="thumbnail"><img src="images/Washington/6.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
@@ -311,12 +311,12 @@
 			            </div>
 					</div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Homes in Chicago</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 			                <div id="Chicago" class="carousel slide">
 			                 
 			                <ol class="carousel-indicators">
@@ -329,17 +329,17 @@
 			                    
 			                <div class="item active">
 			                	<div class="row">
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/1.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/6.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/3.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/1.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/6.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/3.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
 			                <div class="item">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/4.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/5.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/2.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/4.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/5.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Chicago, IL, USA#" class="thumbnail"><img src="images/Chicago/2.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
@@ -350,12 +350,12 @@
 			            </div>
 					</div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Homes in Austin</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 			                <div id="Austin" class="carousel slide">
 			                 
 			                <ol class="carousel-indicators">
@@ -368,17 +368,17 @@
 			                    
 			                <div class="item active">
 			                	<div class="row">
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/1.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/2.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/3.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/1.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/2.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/3.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
 			                <div class="item">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/4.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/5.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/6.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/4.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/5.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Austin, TX, USA#" class="thumbnail"><img src="images/Austin/6.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
@@ -389,12 +389,12 @@
 			            </div>
 					</div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Homes in Boston</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 			                <div id="Boston" class="carousel slide">
 			                 
 			                <ol class="carousel-indicators">
@@ -407,17 +407,17 @@
 			                    
 			                <div class="item active">
 			                	<div class="row">
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/1.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/2.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/3.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/1.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/2.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/3.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
 			                <div class="item">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/4.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/5.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/6.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/4.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/5.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Boston, MA, USA#" class="thumbnail"><img src="images/Boston/6.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
@@ -428,12 +428,12 @@
 			            </div>
 					</div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Homes in Seattle</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 			                <div id="Seattle" class="carousel slide">
 			                 
 			                <ol class="carousel-indicators">
@@ -446,17 +446,17 @@
 			                    
 			                <div class="item active">
 			                	<div class="row">
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/1.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/2.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/3.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/1.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/2.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/3.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
 			                <div class="item">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/4.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/5.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/6.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/4.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/5.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Seattle, WA, USA#" class="thumbnail"><img src="images/Seattle/6.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
@@ -467,12 +467,12 @@
 			            </div>
 					</div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Homes in Raleigh</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 			                <div id="Raleigh" class="carousel slide">
 			                 
 			                <ol class="carousel-indicators">
@@ -485,17 +485,17 @@
 			                    
 			                <div class="item active">
 			                	<div class="row">
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/1.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/2.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/3.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/1.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/2.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/3.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
 			                <div class="item">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/4.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/5.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/6.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/4.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/5.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=Raleigh, NC, USA#" class="thumbnail"><img src="images/Raleigh/6.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
@@ -506,12 +506,12 @@
 			            </div>
 					</div>
 					<div class="row explore-text">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 							<span>Homes in San Jose</span>
 						</div>
 					</div>
 					<div class="row explore-the-world">
-						<div class="col-md-12">
+						<div class="col-xs-12">
 			                <div id="SJC" class="carousel slide">
 			                 
 			                <ol class="carousel-indicators">
@@ -524,17 +524,17 @@
 			                    
 			                <div class="item active">
 			                	<div class="row">
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/1.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/2.jpg" alt="Image" ></a></div>
-			                	  <div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/3.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/1.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/2.jpg" alt="Image" ></a></div>
+			                	  <div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/3.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
 			                <div class="item">
 			                	<div class="row">
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/4.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/5.jpg" alt="Image" ></a></div>
-			                		<div class="col-md-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/6.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/4.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/5.jpg" alt="Image" ></a></div>
+			                		<div class="col-xs-4 col-sm-4"><a href="/searchListing?where=San Jose, CA, USA#" class="thumbnail"><img src="images/SJC/6.jpg" alt="Image" ></a></div>
 			                	</div><!--.row-->
 			                </div><!--.item-->
 			                 
@@ -546,7 +546,7 @@
 					</div>
 					<div class="seperator"></div>
 				</div>
-				<div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
+				<div class="col-lg-1 col-xs-1 hidden-sm hidden-xs">
 				</div>
 			</div>
 		</div>

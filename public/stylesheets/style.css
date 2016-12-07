@@ -400,11 +400,11 @@ body {
 		font-weight: normal;
 		padding-left: 16px;
 		padding-right: 16px;
-		width: auto;
 		min-width: 106px;
 		float: right !important;
 		vertical-align: middle !important;
 		border-radius: 4px;
+		margin-top: 30px;
 	}
 	.search-button:hover {
 		border-color: #ff7e82;
@@ -636,6 +636,35 @@ body {
 		
 	}
 
+}
+
+.search-button {
+	height: 48px;
+	width: 350px;
+	border-color: #ff5a5f;
+	background-color: #ff5a5f;
+	color: #fff;
+	font-size: 18px !important;
+	line-height: 24px !important;
+	padding-top: 11px !important;
+	padding-bottom: 11px !important;
+	font-weight: normal;
+	padding-left: 16px;
+	padding-right: 16px;
+	min-width: 350px;
+	float: right !important;
+	vertical-align: middle !important;
+	border-radius: 4px;
+}
+.search-button:hover {
+	border-color: #ff7e82;
+	background-color: #ff7e82;
+	color: #fff;
+}
+.search-button:active, .search-button:focus, .search-button:visited {
+	border-color: #ff5a5f;
+	background-color: #ff5a5f;
+	color: #fff;
 }
 
 main {
@@ -2465,9 +2494,6 @@ label.star:before {
 	outline: none;
 }
 
-.carousel-size.carousel-control {
-	font-size: 300% !important;
-}
 
 .property-first-image {
 	margin-left: 200px;
@@ -2622,7 +2648,7 @@ label.star:before {
 
 .homepage-box {
 	display: flex;
-	width: 160px;
+	width: 350px;
 	height: 50px;
 	border-radius: 3px !important;
 	font-size: 16px;
@@ -2631,6 +2657,8 @@ label.star:before {
 	border: 1px solid rgba(0, 0, 0, .15);
 	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 	margin-top: 43px;
+	margin-left: -190px;
+	margin-bottom:10px;
 }
 
 .homepage-text {
@@ -2640,9 +2668,8 @@ label.star:before {
 	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	height: 48px;
-	width: 80px;
-	font-size: 22px;
-	padding-left: 3px;
+	width: 280px;
+	font-size: 14px;
 }
 
 .homepage-guest-button {
@@ -2661,6 +2688,7 @@ label.star:before {
 	font-size: 18px;
 	letter-spacing: -0.5px;
 	color: #929292;
+	margin-top: -4px;
 }
 
 .homepage-guest>.btn-default {
@@ -2692,7 +2720,7 @@ label.star:before {
 
 .guest-downarrow {
 	font-size: 30px;
-	line-height: 33px;
+	line-height: 25px;
 	height: 33.81px;
 }
 
@@ -2870,4 +2898,8 @@ input[type=range]:focus::-ms-fill-upper, input[type=range]:active::-ms-fill-uppe
 	cursor: pointer;
 	text-decoration: underline;
 	color: white;
+}
+
+.thumbnail > img {
+	height: 100px;
 }
