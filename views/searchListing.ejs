@@ -28,11 +28,23 @@
 		</div>
 		<div class="container-fluid" style="border-radius:0px; padding:0px; margin-top:5px;">
 			<div class="row"  style="border-radius:0px; padding:0px;">
+				<div class="col-lg-5 col-md-12 col-xs-12" style="border-radius:0px; padding:0px;">
+					<ng-map zoom="{{zoomLevel}}" center="[{{data.centerLatLng.center_lat}}, {{data.centerLatLng.center_lng}}]" style="height:90%; width:550px; position:fixed; margin:0px;">
+						<div ng-repeat="l in filteredResults">
+							<custom-marker position="[{{l.latitude}}, {{l.longitude}}]" animation="Animation.BOUNCE" >
+								<div class="cm">
+									
+									<b style="color:white;">${{l.daily_price}}</b> <span class="glyphicon glyphicon-flash" style="color:yellow;" ng-hide="l.is_bid === 1"></span>
+								</div>
+							</custom-marker>
+						</div>
+					</ng-map>
+				</div>
 				
-				<div class="col-lg-7 " style="border-radius:5px; padding: 20px 20px 20px 20px;">
+				<div class="col-lg-7 col-md-12 col-xs-12" style="border-radius:5px; margin-top:500px; padding: 20px 20px 20px 20px; background-color: white; width: 428px;">
 					
-					<div class="row-fluid" style="padding-bottom:50px;">
-						<div class="col-lg-3" style="padding-left:0px; padding-top:7px;">
+					
+						<div class="col-lg-6 col-md-12 col-xs-12" style="padding-left:0px; padding-top:7px;">
 							Dates
 						</div>
 						<div class="col-lg-6 col-sm-12 col-xs-12" style="width:48%;">
@@ -40,14 +52,14 @@
 								<input date-range-picker type="text" class="form-control date-picker search-bar-placeholder search-placeholder" style="height: 30px; width:90%; border:none; margin-left:10px;" placeholder="Check In     → Check Out" name="daterange" ng-model="daterange">
 							</div>
 						</div>
-						<div class="col-lg-3">
+						<div class="col-lg-3 col-sm-12 col-xs-12">
 							<div class="address-box search-listing-box">
 								<div class="search-listing-text"><input type="text" class="form-control search-listing-text search-placeholder" placeholder="Guests" ng-model="item.item_count"/></div>
 								<span ng-click="item.item_count = item.item_count - 1" class="count-main-button btn button-radius">-</span>
 								<span ng-click="item.item_count = item.item_count + 1" class="count-main-button btn button-radius" style="border-right:none;">+</span>
 							</div>
 						</div>
-					</div>
+					
 					<div style="border-bottom:1px solid #EDEFED; margin-bottom:15px;"></div>
 					
 					<div class="row-fluid"  style="padding-bottom:50px;">
@@ -204,18 +216,6 @@
 				
 			</div>
 			
-			<div class="col-lg-5" style="border-radius:0px; padding:0px;">
-				<ng-map zoom="{{zoomLevel}}" center="[{{data.centerLatLng.center_lat}}, {{data.centerLatLng.center_lng}}]" style="height:90%; width:550px; position:fixed; margin:0px;">
-					<div ng-repeat="l in filteredResults">
-						<custom-marker position="[{{l.latitude}}, {{l.longitude}}]" animation="Animation.BOUNCE" >
-							<div class="cm">
-								
-								<b style="color:white;">${{l.daily_price}}</b> <span class="glyphicon glyphicon-flash" style="color:yellow;" ng-hide="l.is_bid === 1"></span>
-							</div>
-						</custom-marker>
-					</div>
-				</ng-map>
-			</div>
 		</div>
 	</div>
 </body>

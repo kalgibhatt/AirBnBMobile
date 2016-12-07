@@ -122,9 +122,9 @@
 		 						</a>
 								<ul class="dropdown-menu resp_vis_hidden" id="menu1" style="padding:0px;margin-top: -5px;">
 									<li><a ng-href="/profile?owner={{global.loggedInUser.user_id}}" target="_self" style="font-size: 14px;">Edit Profile</a></li>
-									<li ng-click="logout();"><a href="#" style="font-size: 14px;">Log Out</a></li>
+									<li><a href="#" style="font-size: 14px;">Log Out</a></li>
 								</ul>
-								<a href="#" style="font-size: 20px;" class="resp_logout_btn"><span class="glyphicon glyphicon-log-out"></span></a>
+								<a  ng-click="logout();" href="#" style="font-size: 20px;" class="resp_logout_btn"><span class="glyphicon glyphicon-log-out"></span></a>
 	 						</div>
 
 		 				</li>
