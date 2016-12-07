@@ -1013,9 +1013,7 @@ router.get('/viewListing', function(req, res, next) {
 				}, function(callback) {
 					mysql.executeQuery('select avg(host_rating) as average_rating from ratings right join trip_details on ratings.trip_id = trip_details.trip_id where trip_details.listing_id = ?', [listing_id], function(error, average_rating) {
 						if(error) {
-							res.send({
-								'statusCode' : 500
-							});
+							throw error;
 						} else {
 							results[0].avg_rating = average_rating;
 							callback(null, null);
@@ -1045,6 +1043,8 @@ router.get('/viewListing', function(req, res, next) {
 								callback(null, null);
 							}
 						});
+					} else {
+						callback(null, null);
 					}
 				}], function(error, finalResults) {
 					res.render('viewListing', {
