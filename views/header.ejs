@@ -49,7 +49,7 @@
 </style>
 <div >
 	<div ng-controller="navBarController">
-		<nav class="navbar navbar-fixed-top" style="border-radius:0px; box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.05);">
+		<nav class="navbar navbar-fixed-top" style="background-color:white; border-radius:0px; box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.05);">
 		<!--<nav class="navbar navbar-fixed-top" role="main" style="border-radius:0px;">-->
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -70,13 +70,13 @@
 									<span class="glyphicon glyphicon-search" style="color:#AAAAAA; font-size: 24px; margin: 4px 0px 0px 0px;"></span>
 								</div> -->
 								<div id="inLine" class="col-lg-12 li_One_div_One">
-									<span class="glyphicon glyphicon-search"></span>
+									<span class="resp_header_bah glyphicon glyphicon-search"></span>
 								</div>
 							</div>
 						</li>
 						<li class="ul_One">
 							<div id="inLine" class="col-lg-12 ul_Two" ng-controller="searchBarController">
-								<input type="text" class="form-control ul_Three header" placeholder="Where to?" ng-enter="selectCity" ng-click="selectCity" ng-autocomplete="city" details="details" options="options">
+								<input type="text" class="form-control resp_header_bah ul_Three header" placeholder="Where to?" ng-enter="selectCity" ng-click="selectCity" ng-autocomplete="city" details="details" options="options">
 							</div>
 						</li>
 
@@ -85,16 +85,16 @@
 
 		 				<li class="ul_Four">
 		 					<div class="col-lg-12 ul_Five" >
-		 						<div class="btn btn-default btn-style" ng-click = "host();">
+		 						<div class="btn btn-default btn-style resp_header_bah" ng-click = "host();">
 		 							Become a Host
 		 						</div>
 		 					</div>
 		 				</li>
 		 				<li class="ul_Six" >
 		 						<div class="col-lg-8" style="display:inline-block;" ng-hide="global.loggedInUser">
-		 							<a href="https://www.airbnb.com/help" target="_blank" class="ul_Six">Help</a>
+		 							<a href="https://www.airbnb.com/help" target="_blank" class="ul_Six resp_header_bah_option">Help</a>
 		 						</div>
-		 						<div class="col-lg-8" style="display:inline-block;" ng-show="global.loggedInUser">
+		 						<div class="col-lg-8 resp_header_bah_option" style="display:inline-block;" ng-show="global.loggedInUser">
 		 							Trips
 		 						</div>
 		 					
@@ -102,28 +102,29 @@
 		 				<li class="ul_Seven" >
 		 					
 		 						<div  class="col-lg-12 ul_eight ul_Nine" data-toggle="modal" data-target=".signup-modal-md" ng-hide="global.loggedInUser">
-		 							<a style="text-decoration:none;" href="#" class="ul_Nine">Sign Up</a>
+		 							<a style="text-decoration:none;" href="#" class="ul_Nine resp_header_bah_option">Sign Up</a>
 		 						</div>
 
 		 						<div  class="col-lg-12 ul_eight ul_Nine" ng-show="global.loggedInUser">
-		 							<a style="text-decoration:none;" href="#" class="ul_Nine">Messages</a>
+		 							<a style="text-decoration:none;" href="#" class="ul_Nine resp_header_bah_option">Messages</a>
 		 						</div>
 		 					
 		 				</li>
 
 		 				<li  class="ul_Seven">
 	 						<div  class="col-lg-12 ul_eight ul_Nine" data-toggle="modal" data-target=".signin-modal-md" ng-hide="global.loggedInUser">
-	 							<a style="text-decoration:none;" href="#" class="ul_Nine">Log In</a>
+	 							<a style="text-decoration:none;" href="#" class="ul_Nine resp_header_bah_option">Log In</a>
 	 						</div>
 	 						<div  class="col-lg-12 ul_eight ul_Nine dropdown">
-	 							<a style="text-decoration:none;" href="#" class="ul_Nine" ng-show="global.loggedInUser" data-toggle="dropdown" class="dropdown-toggle">
-		 							<img ng-show="global.loggedInUser.photo" style="border-radius:50%; margin-top:-8px; border: 2px solid grey;" data-ng-src="data:{{global.loggedInUser.photo.filetype}};base64,{{global.loggedInUser.photo.base64}}" width="35" height="35">
+	 							<a style="text-decoration:none;" href="#" class="ul_Nine" ng-show="global.loggedInUser" data-toggle="dropdown" class="dropdown-toggle ">
+		 							<img class="resp_login_img" ng-show="global.loggedInUser.photo" style="border-radius:50%; margin-top:-8px; border: 2px solid grey;" data-ng-src="data:{{global.loggedInUser.photo.filetype}};base64,{{global.loggedInUser.photo.base64}}" width="35" height="35">
 		 							<div class="profile-photo glyphicon glyphicon-user no-profile" ng-hide="global.loggedInUser.photo" style="height: 35px; width: 35px; font-size: 20px; padding: 5px;margin-bottom: 13px"></div>
 		 						</a>
-								<ul class="dropdown-menu" id="menu1" style="padding:0px;margin-top: -5px;">
+								<ul class="dropdown-menu resp_vis_hidden" id="menu1" style="padding:0px;margin-top: -5px;">
 									<li><a ng-href="/profile?owner={{global.loggedInUser.user_id}}" target="_self" style="font-size: 14px;">Edit Profile</a></li>
 									<li ng-click="logout();"><a href="#" style="font-size: 14px;">Log Out</a></li>
 								</ul>
+								<a href="#" style="font-size: 20px;" class="resp_logout_btn"><span class="glyphicon glyphicon-log-out"></span></a>
 	 						</div>
 
 		 				</li>

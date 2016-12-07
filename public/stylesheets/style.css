@@ -2903,3 +2903,39 @@ input[type=range]:focus::-ms-fill-upper, input[type=range]:active::-ms-fill-uppe
 .thumbnail > img {
 	height: 100px;
 }
+
+
+
+
+@media ( max-width : 500px) {
+
+	.resp_header_bah{
+		display: none;
+	}
+
+	.resp_header_bah_option{
+		margin-left:  20px;
+		margin-bottom:  40px;
+		font-size:  20px;
+		color: grey;
+	}
+
+
+	.resp_login_img{
+		margin-left: 90%;
+		margin-bottom: 5%;
+		
+	}
+
+
+	.resp_vis_hidden{
+		visibility:  hidden;
+	}
+
+
+	.resp_logout_btn{
+		margin-left: 92.5%;
+		margin-top : 2.5%;
+	}
+
+}
