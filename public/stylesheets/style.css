@@ -2928,4 +2928,43 @@ input[type=range]:focus::-ms-fill-upper, input[type=range]:active::-ms-fill-uppe
 		margin-top : 2.5%;
 	}
 
+
+	.chevronLabelLeft {
+		position: absolute;
+		left: 5%;
+		top: 30%;
+		border: 1px solid white;
+		border-radius: 50%;
+		padding: 5px;
+	}
+	.chevronLabelRight {
+		position: absolute;
+		right: 5%;
+		top: 30%;
+		border: 1px solid white;
+		border-radius: 50%;
+		padding: 5px;
+	}
+
+	.rightLabel {
+		position: absolute;
+		right: 5%;
+		top: 62.5%;
+		border: 2px solid white;
+		border-radius: 50%;
+		padding: 0px;
+	}
+
+
+	.leftLabel {
+		position: absolute;
+		left: 2px;
+	    top: 55%;
+	    border: 0px solid green;
+	    background-color: rgba(0, 0, 0, 0.7);
+	    padding: 10px;
+	    background-color: rgba(45,45,45,0.9);
+	    font-weight: bold;
+	}
+
 }
