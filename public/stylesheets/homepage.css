@@ -225,3 +225,9 @@ body {
     margin-top: -70px;
 }
 
+.carousel-control.right {
+	margin-right: -55px;
+	font-size: 200%;
+	margin-top: -70px;
+}
+

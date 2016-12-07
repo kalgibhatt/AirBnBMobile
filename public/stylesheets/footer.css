@@ -10,7 +10,7 @@
 .footer-image {
     background-image: url('../images/footer/footer-image.png');
     background-color: #2b2d2e;
-    height: 450px;
+    height: 470px;
 }
 
 .footer-content {
@@ -28,6 +28,7 @@
 
 .footer-list {
     color: #fff!important;
+    margin-right: 20px;
 }
 
 .footer-list-heading {
