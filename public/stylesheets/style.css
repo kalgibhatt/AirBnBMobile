@@ -750,6 +750,38 @@ main {
 	border-right-color: #4ddfd4;
 }
 
+.facebookSignUpButton {
+		background-color: #3b5998;
+		border-radius: 5px;
+		padding: 20px 20px 20px 0px;
+	}
+	
+.googleSignUpButton {
+		border-radius: 5px;
+		padding: 20px 20px 20px 20px;
+		border: 1px solid #dce0e0;
+		margin-top: 10px;
+	}
+	.signUpWithEmailbutton {
+		background-color: #ff5a5f;
+		border-radius: 5px;
+		padding: 20px 20px 20px 20px;
+		border: 1px solid #dce0e0;
+		margin-top: 10px;
+	}
+	.signUpNotice {
+		padding: 15px 5px 15px 5px;
+	}
+	.terms-text {
+		color: #329ca0;
+		font-weight: bold;
+	}
+	.terms-text:hover {
+		cursor: pointer;
+		text-decoration: underline;
+		color: #329ca0;
+	}
+
 /*********************************************************
 	*********************************************************/
 body {
@@ -2443,6 +2475,16 @@ label.star:before {
 .on-hover:hover {
 	text-decoration: none !important;
 	cursor: pointer;
+}
+
+.button-effect {
+	border-top-color: #ff5a5f;
+	border-left-color: #ff5a5f;
+	border-right-color: #ff5a5f;
+	border-color: #ff7e82;
+	background-color: #ff7e82;
+	color: #fff;
+	margin-top: 30px;
 }
 
 .button-effect:hover {
