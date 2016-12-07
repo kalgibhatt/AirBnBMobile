@@ -1241,7 +1241,7 @@ input[type='checkbox'] {
 
 /*-----------------------------------------------------------View Listing-----------------------------------------------------*/
 .cover-image-container {
-	height: 402px;
+	height: auto;
 	position: relative;
 	width: 100%;
 }
@@ -1357,9 +1357,7 @@ input[type='checkbox'] {
 
 .book_it_container {
 	height: 418px;
-	width: 315px;
-	margin-left: 25px !important;
-	margin-top: -65px !important;
+	width: 100%;
 }
 
 .price-heading {
@@ -1369,7 +1367,6 @@ input[type='checkbox'] {
 	height: 40px;
 	padding: 6px 20px;
 	text-transform: capitalize;
-	width: 314px;
 	z-index: 1001;
 	overflow-y: hidden;
 }
@@ -1377,17 +1374,12 @@ input[type='checkbox'] {
 .price-bottom {
 	border: 1px solid #dce0e0;
 	height: auto;
-	width: 315px;
 }
 
 .price-date-box {
-	border: 1px solid #ccc;
 	box-shadow: 0 1px 3px 0 #eee;
 	height: 40px;
-	padding: 0px 10px 10px 20px !important;
-	width: 90%;
-	margin-left: 15px !important;
-	margin-bottom: 5px !important;
+	padding: 10px 10px 10px 10px !important;
 }
 
 .price-date-label {
@@ -1401,16 +1393,12 @@ input[type='checkbox'] {
 
 .price-guest-box {
 	display: flex;
-	width: 90%;
 	height: 40px;
 	border-radius: 2px !important;
 	font-size: 16px;
 	background-color: #fff;
 	color: #484848;
-	margin-left: 15px !important;
-	border: 1px solid #ccc;
 	box-shadow: 0 1px 3px 0 #eee;
-	margin-bottom: 5px !important;
 }
 
 .price-guest-text {
@@ -1419,18 +1407,20 @@ input[type='checkbox'] {
 	overflow: hidden;
 	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
-	height: 38px;
-	width: 65%;
+	height: 40px;
 	font-size: 20px;
 }
 
+.guests-box {
+	width: 90%!important;
+}
+
 .price-guest-button {
-	width: 17.5%;
+	width: 15%;
 	border-right: 1px solid #dce0e0;
 	font-size: 30px;
 	line-height: 34px;
 	color: #82888a;
-	padding: 0px 18px 0px;
 	cursor: pointer;
 }
 
